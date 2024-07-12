@@ -31,7 +31,7 @@ const ProjectListComponent = () => {
         </div>
       </div>
       <div className="Logout-Option" onClick={handleLogout}>
-        <img src="/Icons/logout.svg" alt="logout" />
+        <img src="/Icons/Logout.svg" alt="logout" />
       </div>
 
       <div>
