@@ -24,7 +24,7 @@ export default function DataTable() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/getData', {
+        const response = await axios.get('https://tech-prime-dash-board-full-server.vercel.app/api/getData', {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`,
@@ -78,7 +78,7 @@ export default function DataTable() {
 
   const handleAction = async (row, action) => {
     try {
-      const response = await axios.patch('http://localhost:5000/api/projects/statusUpdate', {
+      const response = await axios.patch('https://tech-prime-dash-board-full-server.vercel.app/api/projects/statusUpdate', {
         id: row?._id,
         userId: user,
         status: action

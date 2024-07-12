@@ -11,7 +11,7 @@ export default function Dashboard() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/dashboard",
+          "https://tech-prime-dash-board-full-server.vercel.app/api/dashboard",
           {
             headers: {
               "Content-Type": "application/json",

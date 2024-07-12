@@ -20,7 +20,7 @@ const LoginBox = () => {
 
   const handleLogin = async () => {
     try {  
-      const response = await axios.post('http://localhost:5000/login',{email,password}, { withCredentials: true })
+      const response = await axios.post('https://tech-prime-dash-board-full-server.vercel.app/login',{email,password}, { withCredentials: true })
       localStorage.setItem('data_token', response.data.token);
       const userId = response.data.user._id;
       localStorage.setItem('userId', userId);

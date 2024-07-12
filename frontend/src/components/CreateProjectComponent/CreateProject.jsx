@@ -9,7 +9,7 @@ const CreateProjectComponent = () => {
   const navigate = useNavigate();
   const handleLogout = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/logout");
+      const response = await axios.post("https://tech-prime-dash-board-full-server.vercel.app/logout");
       localStorage.removeItem("data_token");
       localStorage.removeItem("userId");
       // Redirect to login or home page

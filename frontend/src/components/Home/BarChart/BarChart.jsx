@@ -12,7 +12,7 @@ const BarChartComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/barRecordData', {
+        const response = await axios.get('https://tech-prime-dash-board-full-server.vercel.app/api/barRecordData', {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`,

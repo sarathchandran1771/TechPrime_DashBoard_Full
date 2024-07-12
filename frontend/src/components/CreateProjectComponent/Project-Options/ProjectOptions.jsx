@@ -94,7 +94,7 @@ export default function ProjectOptions() {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/recordData',
+        'https://tech-prime-dash-board-full-server.vercel.app/api/recordData',
         formData,
         {
           headers: {

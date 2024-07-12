@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Allow CORS for frontend server running on port 3000
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://tech-prime-dash-board-full-frontend.vercel.app',
     credentials: true
   }));
 
