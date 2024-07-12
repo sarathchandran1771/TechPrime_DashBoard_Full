@@ -1,0 +1,83 @@
+p{
+    font-size: large;
+}
+
+.Bg-Header {
+    background-image: url('../../../public/Icons/Header-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: fixed;
+    height: 25%;
+    width: 100%;
+    top: 0;
+    left: 5%;
+  }
+  
+@media screen and (max-width: 992px ) {
+    .Bg-Header{
+        background-image: url('../../../public/Icons/Header-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        position: fixed;
+        height: 15%;
+        width:100%;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }  
+}
+
+
+.Top-container{
+    height: 50%;
+    width: 100%;
+    border-bottom-left-radius: 100px;
+} 
+
+.Container-Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.LoginBox {
+    text-align: center;
+    width: 90%; 
+    max-width: 400px; 
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.50);
+    border-radius: 8px;
+}
+
+.LabelForLogin{
+    text-align: start;
+    padding-left: 20px;
+    margin:0
+}
+
+.ComponentForLogin{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.LoginInputs{
+    min-height: 40px;
+    min-width: 90%;
+    border-radius: 8px;
+}
+
+.LoginButton{
+    height: 2rem;
+    min-width: 45%;
+    background-color: rgb(28, 72, 155);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: medium;
+    cursor:pointer
+}

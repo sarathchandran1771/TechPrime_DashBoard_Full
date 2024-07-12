@@ -1,0 +1,138 @@
+.container {
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 85%;
+  }
+  
+  .projectType {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:10px;
+    width: 100%;
+  }
+  
+  .textInput {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 8vh;
+  }
+  
+  .textInput input {
+    width: 78%;
+    padding: 8px;
+    font-size: 16px;
+    height: 6vh;
+  }
+  
+  .select-control{
+    width: 78%;
+    padding: 8px;
+    font-size: 16px;
+    height: 8vh;
+    margin-bottom: 10px;
+  }
+
+  .saveButton {
+    width: 20%;
+    height: 5vh;
+    margin-top: 10px;
+    border: none;
+  }
+
+  @media (min-width: 901px) {
+    .saveButtonBottom {
+      display: none;
+    }
+    .saveButton {
+      display: block;
+    }
+  } 
+  
+  .saveButton button {
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 100%;
+    background-color: rgb(71, 71, 233);
+    border-radius: 50px;
+    border: none;
+    color: white;
+  }
+  
+  .sub-container {
+    display: grid;
+    max-width: 85%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    overflow-y: auto;
+  }
+  
+  .form-control {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .select {
+    padding: 8px;
+    font-size: 16px;
+    height: 55px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 900px) {
+    .container {
+      max-height: 70vh;
+      overflow-y: scroll;
+      top: 20%;
+    }
+  
+    .container::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .projectType {
+      flex-direction: column;
+      width: 90%;
+    }
+
+    .textInput input {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        height: 5vh;
+      }
+
+    .select-control {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        height: 6vh;
+      }
+  
+    .saveButton {
+      display: none;
+    }
+
+    .saveButtonBottom {
+      width: 100%;
+      height: 5vh;
+      margin-top: 8px;
+      border: none;
+    }
+
+    .saveButtonBottom button {
+      padding: 12px 20px;
+      font-size: 16px;
+      width: 100%;
+      background-color: rgb(71, 71, 233);
+      border-radius: 50px;
+      border: none;
+      color: white;
+    }
+  
+    .sub-container {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+  }
+  

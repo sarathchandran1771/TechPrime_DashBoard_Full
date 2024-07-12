@@ -1,0 +1,127 @@
+.Bg-Header {
+    background-image: url('../../../public/Icons/Header-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: fixed;
+    height: 25%;
+    width: 100%;
+    top: 0;
+    left: 5%;
+  }
+  
+@media screen and (max-width: 992px ) {
+    .Bg-Header{
+        background-image: url('../../../public/Icons/Header-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        position: fixed;
+        height: 15%;
+        width:100%;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }  
+}
+
+.BarChartHeader{
+    display: flex;
+    position: fixed;
+    left: 10%;
+    top: 33%;
+} 
+
+
+@media screen and (max-width: 992px ) {
+    .BarChartHeader{
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 32%;
+        margin-left:10px;
+    } 
+}
+
+.BarChartComponent{
+    display: flex;
+    left: 10%;
+    top: 40%;
+    align-items: start;
+    position: fixed;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.50);
+}
+
+@media screen and (max-width: 992px ) {
+    .BarChartComponent{
+        left: 0;
+        top: 38%;
+        position: fixed;
+        width: 100%;
+        max-width: 97.3%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.50);
+        margin-left:10px;
+        border-radius: 8%;
+    }  
+}
+
+.Top-Class-Container{
+display: flex;
+position: fixed;
+}
+
+.Main-Param{
+    color: white;
+    position: fixed;
+    left:13%;
+    top: 3%;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.Main-Logo {
+    height: 200px;
+    position: fixed;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+  }
+
+@media screen and (max-width: 992px) {
+    .Main-Logo {
+      height: 200px;
+      position: fixed;
+      left: 50%;
+      top: 3%;
+    }
+  
+    .Main-Logo img {
+      height: 130px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) { /* Adjust the width as needed */
+    .Main-Logo {
+      display: none;
+    }
+  }
+  
+
+.Logout-Option{
+    display: flex;
+    position: fixed; 
+    left: 2%;
+    top: 80%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px ) {
+    .Logout-Option{
+        left: auto;
+        right: 1%;
+        top: 1%;
+        cursor: pointer;
+    }
+}

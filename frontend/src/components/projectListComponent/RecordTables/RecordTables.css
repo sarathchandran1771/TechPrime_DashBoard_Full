@@ -1,0 +1,119 @@
+.record-table-container {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  width: 85%;
+  max-height: 80vh;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.data-grid-custom {
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.data-grid-custom .MuiDataGrid-columnHeader {
+  background-color: #e0e0e0;
+}
+
+.action-buttons button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 30%;
+}
+
+#start-button {
+  background-color: rgb(78, 99, 196);
+  border: none;
+  color: white;
+}
+
+#cnc-button {
+  border: 1px solid rgb(78, 99, 196);
+  color: rgb(78, 99, 196);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.card-field span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .record-table-container {
+    top: 12%;
+    left: 2.5%;
+    width: 95%;
+    max-height: 80vh;
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+
+  .record-table-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .data-grid-custom {
+    display: none;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-field {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .card-field span {
+    font-weight: bold;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 30px;
+  }
+
+  .action-buttons button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #start-button {
+    width: 30%;
+  }
+
+  #cnc-button {
+    width: 30%;
+  }
+  
+}
