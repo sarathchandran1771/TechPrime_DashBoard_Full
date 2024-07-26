@@ -35,23 +35,23 @@ export default function Dashboard() {
   return (
     <div className="stack">
       <div className="Top-Cards">
-        Total Projects
+        <p>Total Projects </p>
         <p>{data?.totalProject}</p>
       </div>
       <div className="Top-Cards">
-        Closed
+        <p>Closed</p>
         <p>{data?.closedProject}</p>
       </div>
       <div className="Top-Cards">
-        Running
+        <p>Running</p>
         <p>{data?.runningProject}</p>
       </div>
       <div className="Top-Cards">
-        Closure Delay
+        <p>Closure Delay</p>
         <p>{data?.closureDelayProject}</p>
       </div>
       <div className="Top-Cards">
-        Cancelled
+        <p>Cancelled</p>
         <p>{data?.cancelledProject}</p>
       </div>
     </div>
