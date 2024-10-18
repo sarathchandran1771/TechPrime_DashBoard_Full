@@ -1,6 +1,8 @@
 Project Management System
 A simple project management system built using React, Node.js, and MongoDB. This application allows users to manage projects with functionalities like authentication, adding project details, listing and searching projects, sorting, pagination, updating project status, and viewing dashboard statistics.
 
+![TechPrime Dashboard](./TechPrime_dashboard.png)
+
 Features
 Login with Authentication: Secure login using JWT token authentication.
 Insert Project Details: Add new projects with relevant information.
